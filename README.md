@@ -1,5 +1,7 @@
 # @nghinv/react-native-loading
 
+Loading an overlay when running long tasks in the react-native application.
+
 # Installation
 
 ## Installing the package
@@ -39,7 +41,7 @@ import React from 'react';
 import { View, StyleSheet, Button } from 'react-native';
 import { Spinner, LoadingService, LoadingView } from '@nghinv/react-native-loading';
 
-export default function Test() {
+export default function Example() {
   const onPress = () => {
     Spinner.show();
     setTimeout(() => {
@@ -51,7 +53,6 @@ export default function Test() {
     <LoadingService>
       <View style={styles.container}>
         <Button title='Show loading' onPress={onPress} />
-        <LoadingView />
       </View>
     </LoadingService>
   );
@@ -103,5 +104,5 @@ const styles = StyleSheet.create({
 
 | Property | Type | Default | Description |
 |----------|:----:|:-------:|-------------|
-| show | `(params: LoadingViewProps) => void` | | show loading when call |
+| show | `(params: LoadingViewProperty) => void` | | show loading when call |
 | hide | `func` | | hide loading when call |
