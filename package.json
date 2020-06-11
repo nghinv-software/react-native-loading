@@ -1,6 +1,6 @@
 {
   "name": "@nghinv/react-native-loading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React native loading screen",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,14 @@
     "react-native",
     "loading",
     "react-native-loading",
+    "react native loading",
+    "spinner",
+    "overlay",
+    "@nghinv/react-native-loading",
+    "@nghinv",
     "nghinv",
     "lumi",
-    "lumi-software",
-    "spinner",
-    "overlay"
+    "lumi-software"
   ],
   "author": "nghinv@lumi.biz",
   "types": "react-native-loading.d.ts",

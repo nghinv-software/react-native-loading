@@ -4,10 +4,10 @@
  */
 
 import LoadingView from './libs/LoadingView';
-import LoadingService, { spinner } from './libs/LoadingService';
+import LoadingService, { Spinner } from './libs/LoadingService';
 
 export {
   LoadingView,
   LoadingService,
-  spinner
+  Spinner
 }
