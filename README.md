@@ -16,7 +16,7 @@ yarn add @nghinv/react-native-loading
 npm install @nghinv/react-native-loading
 ```
 
-![](./assets/example.gif)
+<img src="./assets/example.gif" height="600"/>
 
 # How to use
 
