@@ -16,3 +16,92 @@ yarn add @nghinv/react-native-loading
 npm install @nghinv/react-native-loading
 ```
 
+![](./assets/example.gif)
+
+# How to use
+
+1. Wap `LoadingService` in the `Root Component`
+
+```javascript
+  ...
+  return (
+    <LoadingService>
+      <RootComponent />
+    </LoadingService>
+  );
+  ...
+```
+
+2. Use `Spinner.show()` and `Spinner.hide()`
+
+```javascript
+import React from 'react';
+import { View, StyleSheet, Button } from 'react-native';
+import { Spinner, LoadingService, LoadingView } from '@nghinv/react-native-loading';
+
+export default function Test() {
+  const onPress = () => {
+    Spinner.show();
+    setTimeout(() => {
+      Spinner.hide();
+    }, 2000);
+  };
+
+  return (
+    <LoadingService>
+      <View style={styles.container}>
+        <Button title='Show loading' onPress={onPress} />
+        <LoadingView />
+      </View>
+    </LoadingService>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'skyblue'
+  }
+});
+```
+
+- Show loading with custom property
+
+```javascript
+  ...
+  onShow = () => {
+    Spinner.show({ indicatorColor: 'red' });
+  }
+  ...
+```
+
+# Property
+
+
+## LoadingView property
+
+| Property | Type | Default | Description |
+|----------|:----:|:-------:|-------------|
+| visible | `Bool` | `false` | show/hide loading |
+| indicatorColor | `String` | `white` | |
+| indicatorSize | `large/small` | `large` | |
+| backgroundColor | `String` | `rgba(0, 0, 0, 0.4)` | |
+| renderIndicator | `func` | `undefined` | Custom loading component |
+| containerStyle | `ViewStyle` |  | |
+
+
+## LoadingService property
+
+| Property | Type | Default | Description |
+|----------|:----:|:-------:|-------------|
+| defaultProps | `LoadingViewProperty` | | |
+
+
+## Spinner property
+
+| Property | Type | Default | Description |
+|----------|:----:|:-------:|-------------|
+| show | `(params: LoadingViewProps) => void` | | show loading when call |
+| hide | `func` | | hide loading when call |

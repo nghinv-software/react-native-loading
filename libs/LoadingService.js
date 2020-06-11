@@ -6,15 +6,15 @@
 import React from 'react';
 import WapLoadingView from './WapLoadingView';
 
-let spinner;
+let Spinner;
 
 export default function LoadingService({ children, defaultProps }) {
   return (
     <>
       {children}
-      <WapLoadingView {...defaultProps} ref={ref => { spinner = ref; }} />
+      <WapLoadingView {...defaultProps} ref={ref => { Spinner = ref; }} />
     </>
   );
 }
 
-export { spinner };
+export { Spinner };

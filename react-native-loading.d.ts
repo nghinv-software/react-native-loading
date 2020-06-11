@@ -7,7 +7,7 @@ declare module '@nghinv/react-native-loading' {
   import { PureComponent } from 'react';
   import { ViewStyle } from 'react-native';
 
-  export interface WapLoadingViewProps {
+  interface WapLoadingViewProps {
     /**
      * Custom render indicator
      */
@@ -28,15 +28,15 @@ declare module '@nghinv/react-native-loading' {
     containerStyle?: ViewStyle;
   }
 
-  export interface LoadingViewProps extends WapLoadingViewProps {
+  interface LoadingViewProps extends WapLoadingViewProps {
     visible?: Boolean;
   }
 
-  export interface LoadingServiceProps {
+  interface LoadingServiceProps {
     defaultProps?: WapLoadingViewProps;
   }
 
-  export interface spinner {
+  interface SpinnerProps {
     /**
      * Show spinner
      */
@@ -48,11 +48,13 @@ declare module '@nghinv/react-native-loading' {
     hide: () => void;
   }
 
-  class LoadingService extends PureComponent<LoadingServiceProps> {
+  export const Spinner: SpinnerProps;
+
+  export class LoadingService extends PureComponent<LoadingServiceProps> {
 
   }
 
-  class LoadingView extends PureComponent<LoadingViewProps> {
+  export class LoadingView extends PureComponent<LoadingViewProps> {
 
   }
 }
