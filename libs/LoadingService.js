@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import WapLoadingView from './WapLoadingView';
+import WrapLoadingView from './WrapLoadingView';
 
 let Spinner;
 
@@ -12,7 +12,7 @@ export default function LoadingService({ children, defaultProps }) {
   return (
     <>
       {children}
-      <WapLoadingView {...defaultProps} ref={ref => { Spinner = ref; }} />
+      <WrapLoadingView {...defaultProps} ref={ref => { Spinner = ref; }} />
     </>
   );
 }

@@ -22,7 +22,7 @@ npm install @nghinv/react-native-loading
 
 # How to use
 
-1. Wap `LoadingService` in the `Root Component`
+1. Wrapper `LoadingService` in the `Root Component`
 
 ```javascript
   ...

@@ -6,7 +6,7 @@
 import React, { useState, useImperativeHandle, forwardRef } from 'react';
 import LoadingView from './LoadingView';
 
-function WapLoadingView(props, ref) {
+function WrapLoadingView(props, ref) {
   const [isShow, setIsShow] = useState(false);
   const [otherState, setOtherState] = useState({});
 
@@ -24,4 +24,4 @@ function WapLoadingView(props, ref) {
   return <LoadingView {...props} {...otherState} visible={isShow} />;
 }
 
-export default forwardRef(WapLoadingView);
+export default forwardRef(WrapLoadingView);
