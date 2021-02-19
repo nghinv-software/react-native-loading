@@ -1,6 +1,6 @@
 {
   "name": "@nghinv/react-native-loading",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React native loading screen",
   "main": "index.js",
   "scripts": {
@@ -23,14 +23,14 @@
   "types": "react-native-loading.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lumi-software/react-native-loading.git"
+    "url": "https://github.com/nghinv-software/react-native-loading.git"
   },
   "dependencies": {},
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lumi-software/react-native-loading/issues"
+    "url": "https://github.com/nghinv-software/react-native-loading/issues"
   },
-  "homepage": "https://github.com/lumi-software/react-native-loading#readme",
+  "homepage": "https://github.com/nghinv-software/react-native-loading#readme",
   "devDependencies": {},
   "publishConfig": {
     "access": "public"
